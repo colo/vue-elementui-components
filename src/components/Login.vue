@@ -10,10 +10,23 @@
           </div>
           <div>
               <div style="margin-top: 15px;">
-                <el-input placeholder="User" v-model="user"></el-input>
+                <el-input
+                  placeholder="User"
+                  v-model="user">
+                  <!-- icon icon-user from at-ui-style -->
+                  <i slot="prefix" class="el-input__icon icon icon-user"></i>
+                </el-input>
               </div>
               <div style="margin-top: 15px;">
-                <el-input placeholder="Password" type="password" v-model="password" auto-complete="off"></el-input>
+                <!-- <el-input placeholder="Password" type="password" v-model="password" auto-complete="off"></el-input> -->
+                <el-input
+                  placeholder="Password"
+                  type="password"
+                  v-model="password"
+                  auto-complete="off">
+                  <!-- icon icon-user from at-ui-style -->
+                  <i slot="prefix" class="el-input__icon icon icon-lock"></i>
+                </el-input>
               </div>
               <div style="margin-top: 15px;">
                 <el-button type="primary" style="float: right">Login</el-button>
